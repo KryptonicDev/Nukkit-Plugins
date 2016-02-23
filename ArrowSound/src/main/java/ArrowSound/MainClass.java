@@ -30,7 +30,7 @@ public class MainClass extends PluginBase implements Listener {
 			ev.getEntity().getLevel().addSound(new AnvilFallSound(ev.getEntity().getLocation()));
 			
 			ev.getDamager().getLevel().addSound(new AnvilFallSound(ev.getDamager().getLocation()));
-			ev.getDamager().senTip(TextFormat.GREEN + "HIT!");
+			ev.getDamager().sendTip(TextFormat.GREEN + "HIT!");
 		}
 	}
 }
